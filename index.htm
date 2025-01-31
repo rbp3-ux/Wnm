@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.B. Production</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section with Overlay */
+        .hero {
+            background: url('lion.jpeg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-top: 70px; /* To prevent content from hiding behind fixed header */
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about, .services, .portfolio, .contact {
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 8px;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about:hover, .services:hover, .portfolio:hover, .contact:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .contact a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>R.B. Production</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Innovating Animation Excellence</h2>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About Us - R.B. Production</title>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f8f9fa;
+                    color: #333;
+                    text-align: center;
+                }
+        
+                .container {
+                    max-width: 900px;
+                    margin: 50px auto;
+                    background: #fff;
+                    padding: 40px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+        
+                h1 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 2.5em;
+                    color: #e74c3c;
+                    text-align: center;
+                }
+        
+                h2 {
+                    font-size: 2em;
+                    color: #007bff;
+                    margin-bottom: 10px;
+                }
+        
+                p {
+                    font-size: 1.1em;
+                    line-height: 1.6;
+                }
+        
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+        
+                li {
+                    font-size: 1.1em;
+                    margin: 10px 0;
+                    padding-left: 25px;
+                    position: relative;
+                }
+        
+                li::before {
+                    content: "✔";
+                    color: #e74c3c;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+        
+                .highlight {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    color: #d9534f;
+                    background: #ffe6e6;
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin: 20px 0;
+                }
+        
+                .address {
+                    font-size: 1.1em;
+                    font-style: italic;
+                    background: #f1f1f1;
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: inline-block;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="container">
+                <h1>About R.B. Production</h1>
+                
+                <p>Welcome to <strong>R.B. Production</strong>, a premier  animation and visual effects studio  pushing the boundaries of  3D and 2D animation . We specialize in delivering high-quality  entertainment, advertisements, and digital content  for clients worldwide.</p>
+        
+                <h2>🌍 Global Collaborations</h2>
+                <ul>
+                    <li>We  partner with major production houses  in  the United States, Canada, and Japan .</li>
+                    <li>Expertise in creating  high-end animation  for  films</li>
+                    <li>Our artists bring  stories to life  with stunning  visual effects and character designs .</li>
+                </ul>
+        
+                <h2>🏢 Official Registration</h2>
+                <p>We are officially registered , operating from our headquarters:</p>
+                <p class="address"><strong>R.B. Production</strong> <br>E-29, Connaught Place, New Delhi,110001, India</p>
+        
+                <h2>🔥 Our Specialization</h2>
+                <ul>
+                    <li> 3D Modeling & Animation  – From hyper-realistic  character designs  to immersive  virtual environments .</li>
+                    <li> 2D Animation & Storyboarding  – Traditional and modern techniques to create fluid  motion graphics .</li>
+                </ul>
+        
+                <h2>📩 Get in Touch</h2>
+                <p>For collaborations, inquiries, or custom projects, feel free to reach out.</p>
+                <p><strong>Email:</strong> <a href="mailto:rbproduction34@gmail.com">rbproduction34@gmail.com</a></p>
+            </div>
+        
+        </body>
+        </html>
+            
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <h2>Portfolio</h2>
+        <img src="lion.jpeg" alt="Lion being sculpted in ZBrush">
+        <p>Explore our portfolio showcasing stunning 3D models and animations crafted with precision and passion.</p>
+        <br>
+        <img src="house.jpg" alt="House Model">
+        <p>House Model Being Made By Our People</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries or collaborations, reach out to us directly:</p>
+        <a href="mailto:rbproduction34@gmail.com">Email Us</a>
+    </section>
+
+    <!-- Smooth Scrolling JavaScript -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default instant jump
+
+                const targetId = this.getAttribute('href'); // Get section ID
+                const targetSection = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60, // Offset to align properly
+                    behavior: 'smooth' // Smooth scrolling effect
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
